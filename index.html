@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explorador de episodios de Rick and Morty">
+<title>Rick and Morty | Explorador de episodios</title>
+<link rel="stylesheet" href="css/estilos.css">
+<script src="js/app.js" defer></script>
+</head>
+<body>
+<header class="encabezado">
+  <div class="contenedor encabezado-contenido">
+    <p class="marca">RICK AND MORTY</p>
+    <h1>Explorador de episodios</h1>
+    <p class="subtitulo">Buscá tus episodios favoritos de Rick and Morty</p>
+  </div>
+</header>
+<main class="contenedor principal">
+  <section class="panel-busqueda" aria-labelledby="titulo-busqueda">
+    <h2 id="titulo-busqueda">Buscá un episodio</h2>
+    <p class="ayuda">Buscá por nombre, por temporada o combiná ambos filtros.</p>
+    <form id="formulario-busqueda">
+      <div class="campos">
+        <div class="campo">
+          <label for="nombre">Nombre del episodio</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej.: Pilot">
+        </div>
+        <div class="campo">
+          <label for="temporada">Temporada</label>
+          <select id="temporada" name="temporada">
+            <option value="">Todas las temporadas</option>
+            <option value="S01">Temporada 1 (S01)</option>
+            <option value="S02">Temporada 2 (S02)</option>
+            <option value="S03">Temporada 3 (S03)</option>
+            <option value="S04">Temporada 4 (S04)</option>
+            <option value="S05">Temporada 5 (S05)</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" id="boton-buscar">Buscar episodios</button>
+    </form>
+    <p id="mensaje" class="mensaje" role="status" aria-live="polite">Ingresá un nombre o elegí una temporada para comenzar.</p>
+  </section>
+  <section class="seccion-resultados" aria-labelledby="titulo-resultados">
+    <div class="titulo-resultados">
+      <h2 id="titulo-resultados">Resultados</h2>
+      <p id="contador" class="contador"></p>
+    </div>
+    <div id="resultados" class="grilla-tarjetas"></div>
+  </section>
+</main>
+<footer class="pie">
+  <p>Trabajo Práctico · Fundamentos de Desarrollo Web</p>
+  <p>Realizado por Mia Cardozo · Variante C</p>
+</footer>
+</body>
+</html>
