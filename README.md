@@ -17,4 +17,4 @@ https://rickandmortyapi.com/api/episode
 Abrir el archivo `index.html` con Live Server desde Visual Studio Code.
 
 ## Captura de pantalla
-![Captura del explorador de episodios](img/Captura.png)
+![Captura del explorador de episodios](img/captura.png)
